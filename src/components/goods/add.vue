@@ -306,7 +306,6 @@ export default {
     }
 
   },
-
   computed: {
     //   计算this.addForm.goods_cat[2]   =   id  装换
     cateId () {
