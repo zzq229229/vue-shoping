@@ -4,9 +4,7 @@ import Vue from 'vue'
 // import { Input } from 'element-ui'
 import {
   Form, FormItem, Input, Button, Message, Container, Header, Aside, Main, Menu, Submenu,
-  MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch, Tooltip,
-  Pagination, Dialog, MessageBox, Tag, Tree, Option, Select, Alert, Cascader, Tabs, TabPane,
-  Steps, Step, Checkbox, CheckboxGroup, Upload
+  MenuItem, Breadcrumb, BreadcrumbItem, Card, Row, Col, Table, TableColumn, Switch, Tooltip, Pagination, Dialog, MessageBox, Tag, Tree, Option, Select, Alert, Cascader, Tabs, TabPane, Steps, Step, Checkbox, CheckboxGroup, Upload, Timeline, TimelineItem
 
 } from 'element-ui'
 
@@ -46,7 +44,8 @@ Vue.use(Step)
 Vue.use(Checkbox)
 Vue.use(CheckboxGroup)
 Vue.use(Upload)
-
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 Vue.prototype.$message = Message
 // $message是自定义属性，可改
 Vue.prototype.$confirm = MessageBox.confirm
