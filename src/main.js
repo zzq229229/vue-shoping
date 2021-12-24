@@ -12,6 +12,7 @@ import VueQuillEditor from 'vue-quill-editor'
 import 'quill/dist/quill.core.css' // import styles
 import 'quill/dist/quill.snow.css' // for snow theme
 import 'quill/dist/quill.bubble.css' // for bubble theme
+import TreeTable from 'vue-table-with-tree-grid'
 
 import axios from 'axios'
 // import { config } from 'vue/types/umd'
@@ -31,6 +32,7 @@ Vue.config.productionTip = false
 Vue.use(VueQuillEditor)
 
 // vue.component('tree_table', treeTable)
+Vue.component('tree-table', TreeTable)
 // 时间过滤器vue.filter('过滤器名字'，函数function(originVal 需要处理的时间数据))
 Vue.filter('deteFormet', function (originVal) {
   const dt = new Date(originVal)
